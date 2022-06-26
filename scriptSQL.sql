@@ -10,11 +10,11 @@ USE estoque;
 create table fornecedor(
 id_fornecedor int NOT NULL AUTO_INCREMENT,
 nome varchar(30) NOT NULL,
-endereco varchar(30) NOT NULL,
 cnpj int(10) NOT NULL,
 cidade varchar(30),
 estado varchar(30),
 cep int(9),
+endereco varchar(30) NOT NULL,
 PRIMARY KEY (id_fornecedor)
 ) default charset = utf8;
 
