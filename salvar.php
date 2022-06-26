@@ -12,7 +12,7 @@
     $banco = mysqli_connect("localhost", "root", "");
     mysqli_select_db($banco, "estoque");
 
-    $sql = "INSERT INTO fornecedor VALUES(DEFAULT, '$nome', '$endereco', '$cnpj', '$cidade', '$estado', '$cep')";
+    $sql = "INSERT INTO fornecedor VALUES(DEFAULT, '$nome', '$cnpj', '$cidade', '$estado', '$cep', '$endereco')";
 
     $resultado = mysqli_query($banco, $sql);
 
