@@ -1,3 +1,4 @@
+  /*CSS dos Inputs*/
   input[type=text], select {
     
     width: 100%;
@@ -9,6 +10,7 @@
     box-sizing: border-box;
   }
 
+  /*CSS dos Inputs*/
   input[type=submit], [type=reset]{
     width: 15%;
     background-color: #4c6faf;
@@ -19,7 +21,7 @@
     border-radius: 4px;
     cursor: pointer;
   }
-
+  /*CSS dos Botões*/
   button{
     width: 150px;
     background-color: #4c6faf;
@@ -31,6 +33,11 @@
     cursor: pointer;
   }
 
+  button:hover {
+    background-color: #30539e;
+  }
+
+  /*Efeitos ao passar o mouse por cima dos botões*/
   input[type=submit]:hover {
     background-color: #30539e;
   }
@@ -38,6 +45,7 @@
     background-color: #30539e;
   }
 
+  /*CSS do botão Voltar*/
   .voltar{
     width: 100px;
     background-color: #4c6faf;
@@ -49,7 +57,7 @@
     cursor: pointer;
   }
 
-
+  /*CSS do Formulário*/
   .form {
     margin: auto;
     width: 40%;
@@ -58,16 +66,20 @@
     padding: 20px;    
   }
 
+  /*CSS da classe título*/
   .titulo{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
+  /*Alinhar classe bottom */
   .bottom{
       text-align: center;
   }
 
+
+  /*CSS da classe container*/
   .container {
     display: flex;
     justify-content: center; 
