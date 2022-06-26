@@ -13,7 +13,7 @@
             <h1>Cadastro de Fornecedor</h1>  
         </div>
            
-        <form action="cadastro.php" method="post">            
+        <form action="salvar.php" method="post">            
             <!-- Form-->
             <label for="">Nome</label>
             <input type="text" name="nome" size="10" maxlength="10" id="" required>
@@ -36,12 +36,10 @@
             <!-- Botões-->
             <div class="bottom">
                 <input type="submit" value="Salvar">
-                <input type="reset" value="Novo/Limpar">
-                <button onclick="window.location.href = ''">Editar</button>
-                <input type="submit" value="Excluir">
-                <input type="submit" value="Alterar">
-            </div>                   
+                <input type="reset" value="Novo/Limpar">                
+            </div>                  
         </form>
+        <a href="index.html"><button class="voltar">Voltar</button></a>
     </div>   
     
 </body>
