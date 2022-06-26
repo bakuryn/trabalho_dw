@@ -10,7 +10,7 @@ USE estoque;
 create table fornecedor(
 id_fornecedor int NOT NULL AUTO_INCREMENT,
 nome varchar(30) NOT NULL,
-endereço varchar(30) NOT NULL,
+endereco varchar(30) NOT NULL,
 cnpj int(10) NOT NULL,
 cidade varchar(30),
 estado varchar(30),
@@ -32,6 +32,3 @@ foreign key(id_fornecedor) references fornecedor(id_fornecedor)
 
 /*Caso queira verificar se os dados foram inseridos*/
 select * from fornecedor;
-
-
-
