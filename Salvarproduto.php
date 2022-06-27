@@ -40,7 +40,7 @@
      <!-- Botões-->
      <div class="container">
          <ul>
-             <li><a href="cad_fornecedor.html"><button>Voltar</button></a></li>
+             <li><a href="cad_produto.html"><button>Voltar</button></a></li>
          </ul>
      </div> 
      

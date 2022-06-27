@@ -1,37 +1,37 @@
 <?php
-   <?php
-   if(!empty($_GET['id'])){
-       @ini_set('discplay_errors', '1');
-       error_reporting(E_ALL);
+   
+    if(!empty($_GET['id'])){
+        @ini_set('discplay_errors', '1');
+        error_reporting(E_ALL);
 
-       $id = $_GET["id"];        
+        $id = $_GET["id"];        
 
-       $banco = mysqli_connect("localhost", "root", "");
-       mysqli_select_db($banco, "estoque");
+        $banco = mysqli_connect("localhost", "root", "");
+        mysqli_select_db($banco, "estoque");
 
-       $sql = "SELECT * FROM produto WHERE id=$id";
+        $sql = "SELECT * FROM produto WHERE id_produto=$id";
 
-       $resultado = mysqli_query($banco, $sql);
+        $resultado = mysqli_query($banco, $sql);
 
-       if($resultado->num_rows > 0){
-           while($user_data = mysqli_fetch_assoc($resultado)){
-            $idProduto = $user_data["id_produto"]
-            $idFornecedor = $user_data["id_fornecedor"]
-            $nome = $user_data["nomeProd"];
-            $peso = $user_data["peso"]
-            $precouni = $user_data["precoUnitario"];
-            $precotot = $user_data["precoTotal"];
-                            
-           }          
-       }
-       else{
-           header("Location:listar.php");
-       }
+        if($resultado->num_rows > 0){
+            while($user_data = mysqli_fetch_assoc($resultado)){
+                $idProduto = $user_data["id_produto"];
+                $idfornecedor = $user_data["id_fornecedor"];
+                $nome = $user_data["nomeProd"];
+                $peso = $user_data["peso"];
+                $precouni = $user_data["precoUnitario"];
+                $precotot = $user_data["precoTotal"];
+                                
+            }          
+        }
+        else{
+            header("Location:listar.php");
+        }
 
-       mysqli_close($banco);                
-   }
+        mysqli_close($banco);                
+    }
 
-   ?>
+?>
 
 
 
@@ -50,7 +50,7 @@
                <h1>Cadastro de Produtos</h1>  
            </div>
            
-           <form action="salvarEditar.php" method="post">            
+           <form action="salvarEditarProd.php" method="post">            
                <!-- Form-->
 
                <label for="">Nome</label>
@@ -73,7 +73,7 @@
                    <input type="reset" value="Limpar">                
                </div>                   
            </form>
-           <a href="listar.php"><button class="voltar">Voltar</button></a>
+           <a href="listarProduto.php"><button class="voltar">Voltar</button></a>
        </div> 
    
 </body>

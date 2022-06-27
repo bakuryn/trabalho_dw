@@ -51,13 +51,13 @@
                 echo"
                 <tr>
                     <td>$id</td>
-                    <td>$ID_Fornecedor</td>
-                    <td>$Nome</td>
+                    <td>$ID_fornecedor</td>
+                    <td>$nome</td>
                     <td>$peso</td>
                     <td>$precouni</td>
                     <td>$precotot</td>
                     <td>
-                        <a href=\"editar.php?id=$id\">[Editar]</a>
+                        <a href=\"EditarProduto.php?id=$id\">[Editar]</a>
                         <a href=\"excluir.php?id=$id\">[Excluir]</a>
                     </td>
 
