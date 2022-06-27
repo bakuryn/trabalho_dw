@@ -2,10 +2,10 @@
      @ini_set('discplay_errors', '1');
      error_reporting(E_ALL);
  
-     $idProduto = $_POST["id_produto"]
-     $idFornecedor = $_POST["id_fornecedor"]
+     
+     $idFornecedor = $_POST["id_fornecedor"];
      $nome = $_POST["nomeProd"];
-     $peso = $_POST["peso"]
+     $peso = $_POST["peso"];
      $precouni = $_POST["precoUnitario"];
      $precotot = $_POST["precoTotal"];
  
