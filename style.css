@@ -1,3 +1,11 @@
+  *{  
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+  }
+  
   /*CSS dos Inputs*/
   input[type=text], select {
     
@@ -98,7 +106,7 @@
   table{ /** Faz o estilo da tabela inteira. **/
       background: orange; /** Coloca um fundo laranja. **/
       border-color: blue; /** Insere a borda azul. **/
-      border-style: dotted; /** Define a borda pontilhada. **/
+      border-style: none; /** Define a borda pontilhada. **/
   }
 
   th{/** Faz o estilo para as células do cabeçalho. **/
