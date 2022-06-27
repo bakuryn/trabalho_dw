@@ -58,7 +58,7 @@
                     <td>$precotot</td>
                     <td>
                         <a href=\"EditarProduto.php?id=$id\">[Editar]</a>
-                        <a href=\"excluir.php?id=$id\">[Excluir]</a>
+                        <a href=\"excluirProduto.php?id=$id\">[Excluir]</a>
                     </td>
 
                 </tr>\n";

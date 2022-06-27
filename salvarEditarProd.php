@@ -3,7 +3,7 @@
         error_reporting(E_ALL);
 
         if(isset($_POST['update'])){
-
+            $id = $_POST["id"];
             $idFornecedor = $_POST["id_fornecedor"];
             $nome = $_POST["nomeProd"];
             $peso = $_POST["peso"];
@@ -14,7 +14,7 @@
         $banco = mysqli_connect("localhost", "root", "");
         mysqli_select_db($banco, "estoque");
 
-        $sql = "UPDATE produto SET nomeProd = '$nome', id_fornecedor = '$idFornecedor', 
+        $sql = "UPDATE produto SET id_fornecedor = '$idFornecedor', nomeProd = '$nome',  
         peso = '$peso', precoUnitario = '$precouni', precoTotal = '$precotot'
         WHERE produto.id_produto = $id";
 
@@ -22,7 +22,7 @@
 
         mysqli_close($banco);
 
-        header("Location:listar.php");
+        header("Location:listarProduto.php");
 
     ?> 
 

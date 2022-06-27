@@ -7,13 +7,13 @@
     $banco = mysqli_connect("localhost", "root", "");
     mysqli_select_db($banco, "estoque");
 
-    $sql = "DELETE FROM fornecedor WHERE id_fornecedor = $id";
+    $sql = "DELETE FROM produto WHERE id_produto = $id";
 
     $resultado = mysqli_query($banco, $sql);
 
     mysqli_close($banco);
 
-    header("Location:listar.php");
+    header("Location:listarProduto.php");
 
 ?>
 

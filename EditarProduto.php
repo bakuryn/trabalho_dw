@@ -56,6 +56,9 @@
                <label for="">Nome</label>
                <input type="text" name="nomeProd" size="10" maxlength="20" id="" value="<?php echo $nome?>" required>
 
+               <label for="">CNPJ do fornecedor</label>
+               <input type="text" name="id_fornecedor" size="10" maxlength="20" id="" value="<?php echo $idfornecedor?>" required>
+
                <label for="">Peso</label>
                <input type="text" name="peso" size="10" maxlength="10" id="" value="<?php echo $peso ?>" required>
 
