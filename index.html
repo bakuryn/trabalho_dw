@@ -5,23 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Restaurante</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styletest.css">
+
+     <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="form">
-        <div class="titulo">
-            <h1>Controle de Restaurante</h1>  
-        </div>          
-        
-        <!-- Botões-->
-        <div class="container">
-            <ul>
-                <li><a href="listar.php"><button>Listar fornecedores</button></a></li>
-                <li><a href="cad_fornecedor.html"><button>Cadastrar fornecedor</button></a></li>
-            </ul>
-        </div>                
-        
-    </div>   
+    <header>
+        <a href="#" class="logo"> Restaurante </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="cad_fornecedor.html">Cadastrar forncedor</a></li>
+            <li><a href="#listpro">Lista de Produtos</a></li>
+            <li><a href="listar.php">Lista de fornecedores</a></li>
+            <li><a href="cad_produto.html">Cadastrar produto</a></li>
+        </ul>
+    </header>
     
+    <!--------começo da home----------->        
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Avaliação 02</h1>
+            <h2>Etapa 02 <br> Equipe 03</h2>
+            <a href="#" class="bnt"> Menu do dia </a>
+        </div>
+
+        <div class="home-img">
+            <img src="img/home.png">
+
+        </div>
+    </section>
+    
+    <!--------começo do menu----------->  
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Produtos menu</span>
+            <h2>Produtos do menu</h2>
+        </div>
+        
+        <div class="menu-container">
+            <div class="box">
+            <div class="box-img">
+                <img src="img/food1.png">
+            </div>
+            <h2>Hambúrguer Natural</h2>
+            <h3>Hambúrguer vegetariano</h3>
+            <span>$11.00</span>
+            <i class='bx bx-cart-alt'></i>
+        </div>
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/food2.png">
+            </div>
+            <h2>Hambúrguer de Carne</h2>
+            <h3>Hambúrguer de cupim</h3>
+            <span>$16.00</span>
+            <i class='bx bx-cart-alt'></i>
+        </div>
+
+
+        <div class="box">
+            <div class="box-img">
+                <img src="img/food3.png">
+            </div>
+            <h2>Balde de frango</h2>
+            <h3>Contém 12 unidades de coxa de frango</h3>
+            <span>$18.00</span>
+            <i class='bx bx-cart-alt'></i>
+        </div>
+
+        <div class="box1">
+            <div class="box-img">
+                <img src="img/about.png">
+            </div>
+            <h2>Oferta especial</h2>
+            <h3>Junto vem uma batata frita</h3>
+            <span>$17.00</span>
+            <i class='bx bx-cart-alt'></i>
+        </div>
+
+    </div>
+    </section>
 </body>
 </html>

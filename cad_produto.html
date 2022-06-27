@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedor</title>
+    <link rel="stylesheet" type="text/css" href="stylepro.css">
+</head>
+<body>
+    <div class="form">
+        <div class="t">
+            <h1>Cadastro de Produto</h1>  
+        </div>
+           
+        <form action="salvar.php" method="post">            
+            <!-- Form-->
+            <label for="">Nome</label>
+            <input type="text" name="nome" size="10" maxlength="50" id="" required>
+
+            <label for="">CNPJ do fornecedor</label>
+            <input type="text" name="cnpj" size="10" maxlength="50" id="" required>
+
+            <label for="">Data de validade</label>
+            <input type="text" name="validade" size="10" maxlength="10" id="" required>
+
+            <label for="">Preço</label>
+            <input type="text" name="preco" size="10" maxlength="50" id="" required>
+
+
+            <!-- Botões-->
+            <div class="bottom">
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Novo/Limpar">                
+            </div>                  
+        </form>
+        <a href="index.html"><button class="voltar">Voltar</button></a>
+    </div>   
+    
+</body>
+</html>
