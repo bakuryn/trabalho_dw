@@ -2,7 +2,6 @@
      @ini_set('discplay_errors', '1');
      error_reporting(E_ALL);
  
-     
      $idFornecedor = $_POST["id_fornecedor"];
      $nome = $_POST["nomeProd"];
      $peso = $_POST["peso"];
