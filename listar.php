@@ -58,7 +58,7 @@
                     <td>$estado</td>
                     <td>$cep</td>
                     <td>
-                        <a href=\"editar.php?id=$id\">[Editar]</a>
+                        <a href=\"editarFor.php?id=$id\">[Editar]</a>
                         <a href=\"excluir.php?id=$id\">[Excluir]</a>
                     </td>
 

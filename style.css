@@ -94,6 +94,18 @@
     margin-top: 7px;
     padding-bottom: 3px;
   }
+  
+  table{ /** Faz o estilo da tabela inteira. **/
+      background: orange; /** Coloca um fundo laranja. **/
+      border-color: blue; /** Insere a borda azul. **/
+      border-style: dotted; /** Define a borda pontilhada. **/
+  }
+
+  th{/** Faz o estilo para as células do cabeçalho. **/
+    background: #666; /** Muda para um fundo cinza. **/
+    color: white; /** Troca a cor da fonte para branco. **/
+ }
+ 
   body{
   color: #fff;
   background: #1e1c2a;
